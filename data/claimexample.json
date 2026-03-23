@@ -1,0 +1,44 @@
+[
+  {
+    "id": "CLM_001",
+    "rejection_reason": "procedure_not_covered",
+    "claim_text": "Patient presented with acute lower back pain radiating to the left leg. Treating physician ordered an MRI of the lumbar spine (CPT 72148) to rule out disc herniation. Patient has a history of chronic lumbar pain treated conservatively for 6 weeks without improvement prior to imaging.",
+    "label": "accepted",
+    "supporting_docs": {
+      "diagnosis_code": "M54.4",
+      "procedure_code": "72148",
+      "procedure_description": "MRI lumbar spine without contrast",
+      "provider_notes": "Conservative treatment for 6 weeks failed. Imaging required to rule out surgical pathology.",
+      "policy_type": "COMPREHENSIVE_PLUS",
+      "prior_authorization": true
+    }
+  },
+  {
+    "id": "CLM_002",
+    "rejection_reason": "procedure_not_covered",
+    "claim_text": "Patient requested a full-body PET scan for general wellness screening. No specific symptoms reported. Patient states they want a baseline scan for peace of mind. No prior diagnostic workup performed.",
+    "label": "rejected",
+    "supporting_docs": {
+      "diagnosis_code": "Z00.00",
+      "procedure_code": "78816",
+      "procedure_description": "PET scan whole body",
+      "provider_notes": "Patient requested preventive full-body scan, no clinical indication documented.",
+      "policy_type": "STANDARD",
+      "prior_authorization": false
+    }
+  },
+  {
+    "id": "CLM_003",
+    "rejection_reason": "procedure_not_covered",
+    "claim_text": "28-year-old patient with newly diagnosed Type 1 diabetes referred for continuous glucose monitoring system (CGM) setup and training. Patient is on insulin therapy and has experienced two hypoglycemic episodes in the past month. Endocrinologist documents medical necessity.",
+    "label": "accepted",
+    "supporting_docs": {
+      "diagnosis_code": "E10.649",
+      "procedure_code": "95251",
+      "procedure_description": "Ambulatory continuous glucose monitoring, interpretation and report",
+      "provider_notes": "Type 1 diabetic on insulin with documented hypoglycemic events. CGM medically necessary for safe glucose management.",
+      "policy_type": "COMPREHENSIVE_PLUS",
+      "prior_authorization": true
+    }
+  }
+]
